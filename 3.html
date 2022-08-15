@@ -18,6 +18,32 @@
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="다크모드 활성화" onclick="
+        var target = document.querySelector('body');
+        if (this.value === '다크모드 활성화') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = '다크모드 비활성화';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'powderblue';
+                i = i + 1;
+            }
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = '다크모드 활성화';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'blue';
+                i = i + 1;
+            }
+        }
+    ">
     <div id="grid">
     <ol>
         <li><a href="1.html">HTML</a></li>
@@ -67,5 +93,17 @@ s.setAttribute('data-timestamp', +new Date());
     })();
     </script>
     <!--End of Tawk.to Script-->
+    <input type="button" value="다크모드 활성화" onclick="
+        var target = document.querySelector('body');
+        if (this.value === '다크모드 활성화') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = '다크모드 비활성화';
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = '다크모드 활성화';
+        }
+    ">
 </body>
 </html>
